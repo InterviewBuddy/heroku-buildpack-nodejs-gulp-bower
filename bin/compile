@@ -5,9 +5,9 @@ set -o pipefail   # don't ignore exit codes when piping output
 # set -x          # enable debugging
 
 # Configure directories
-build_dir=$1
-cache_dir=$2
-env_dir=$3
+build_dir=$1/client
+cache_dir=$2/client
+env_dir=$3/client
 
 bp_dir=$(cd $(dirname $0); cd ..; pwd)
 
